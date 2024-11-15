@@ -29,7 +29,6 @@ table.container {
   padding: 18px 0;
   // padding-top: 18px;
   background: $dark-gray;
-  
 }
 
 .body-drip {
@@ -39,7 +38,9 @@ table.container {
 h1, h2, h3 {
   color: $white;
   line-height: 1.2;
+  font-weight: 700;
 }
+
 p {
   &:last-child {
     margin-bottom: 0;
@@ -53,8 +54,6 @@ p {
   font-size: 14px;
 }
 
-
-// Full Width Headers
 .header {
   background: #8a8a8a;
 }
@@ -82,6 +81,11 @@ p {
   }
   border-radius: 12px;
   overflow: hidden;
+
+  img {
+    display: inline-block;
+    transform: translateY(4px);
+  }
 }
 
 table.button.secondary table a {
@@ -104,9 +108,40 @@ table.button.secondary table a {
   }
 }
 
+.wrapper.card-item {
+  padding-bottom: 18px;
+}
+
 .card-item {
+
   h3 {
     margin-bottom: 8px;
+  }
+
+  &__img-wrap {
+    position: relative;
+    height: 130px;
+
+    img {
+      position: relative;
+      z-index: 2;
+      object-fit: contain;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 50%;
+      height: 50px;
+      background: $primary-color;
+      z-index: 0;
+      border-radius: 100%;
+      filter: blur(40px);
+    }
   }
 }
 
@@ -176,5 +211,20 @@ table.button.secondary table a {
         transform: translateY(4px);
       }
     }
+  }
+}
+
+.fields-wrapper {
+  margin-bottom: 16px;
+
+  .field {
+    padding: 8px;
+    margin-bottom: 8px;
+    background: $light-gray;
+    border-radius: 8px;
+  }
+
+  span {
+    color: $white;
   }
 }
