@@ -123,6 +123,7 @@ table.button.secondary table a {
     position: relative;
     height: 130px;
     margin-bottom: 20px;
+    background-image: url(https://raw.githubusercontent.com/JulietBrn/fusion/refs/heads/main/src/assets/img/bg-blur.png);
 
     img {
       position: relative;
@@ -133,17 +134,17 @@ table.button.secondary table a {
       object-position: bottom;
     }
 
-    .before {
-      position: absolute;
-      top: 10%;
-      right: 0;
-      width: 50%;
-      height: 50px;
-      background: $primary-color;
-      z-index: 0;
-      border-radius: 100%;
-      filter: blur(40px);
-    }
+    // .before {
+    //   position: absolute;
+    //   top: 10%;
+    //   right: 0;
+    //   width: 50%;
+    //   height: 50px;
+    //   background: $primary-color;
+    //   z-index: 0;
+    //   border-radius: 100%;
+    //   filter: blur(40px);
+    // }
   }
 }
 
