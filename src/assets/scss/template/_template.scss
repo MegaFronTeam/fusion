@@ -21,9 +21,13 @@ table.container {
   &:last-child {
     margin-bottom: 20px;
   }
+  &:first-child {
+    margin-top: 20px;
+  }
 }
 .wrapper {
-  // padding: 18px 21px;
+  padding: 18px 0;
+  // padding-top: 18px;
   background: $dark-gray;
   
 }
@@ -72,12 +76,6 @@ p {
   background: transparent;
 }
 
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
-
 .button {
   &:last-child {
     margin-bottom: 0;
@@ -90,21 +88,14 @@ table.button.secondary table a {
   color: $primary-color !important;
 }
 
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
 
 .wrapper.secondary {
   background: #f3f3f3;
 }
 
 .img-wrap {
+  margin-bottom: 16px;
+
   img {
     border-radius: 16px;
     width: 100% !important;
