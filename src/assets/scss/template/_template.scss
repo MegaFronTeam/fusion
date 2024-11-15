@@ -121,6 +121,7 @@ table.button.secondary table a {
   &__img-wrap {
     position: relative;
     height: 130px;
+    margin-bottom: 20px;
 
     img {
       position: relative;
@@ -128,10 +129,10 @@ table.button.secondary table a {
       object-fit: contain;
       width: 100% !important;
       height: 100% !important;
+      object-position: bottom;
     }
 
-    &:before {
-      content: '';
+    .before {
       position: absolute;
       top: 10%;
       right: 0;
