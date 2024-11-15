@@ -85,7 +85,7 @@ p {
   img {
     display: inline-block;
     transform: translateY(4px);
-    width: 24px;
+    width: 24px !important;
   }
 }
 
@@ -173,7 +173,7 @@ table.button.secondary table a {
   &__social-links  {
     img {
       display: inline-block;
-      width: 19px;
+      width: 19px !important;
     }
 
     a:not(:last-child) {
@@ -212,7 +212,7 @@ table.button.secondary table a {
 
       img {
         transform: translateY(4px);
-        width: 24px;
+        width: 24px !important;
       }
     }
   }
