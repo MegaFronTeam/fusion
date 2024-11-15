@@ -156,6 +156,10 @@ table.button.secondary table a {
   }
 
   &__links {
+    a {
+      text-wrap: nowrap;
+    }
+
     a:not(:last-child) {
       margin-right: 24px;
     }
