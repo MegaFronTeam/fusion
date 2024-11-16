@@ -115,7 +115,16 @@ table.button.secondary table a {
   // border-spacing: 24px 10px; 
   // margin-left: -8px;
   // margin-right: -8px;
-  width: calc(100% + 8px) !important;
+  // width: calc(100% + 21px) !important;
+  th.large-6.first {
+    padding-left: 0;
+  }
+  th.large-6.last {
+    padding-right: 0;
+  }
+  @media only screen and (max-width: 591px) {
+    width: calc(100% + 8px) !important;
+  }
 
 }
 @media only screen and (max-width: 591px) {
@@ -126,7 +135,7 @@ table.button.secondary table a {
 }
 
 .row-col .wrapper.columns.card-item {
-  padding-left: 0px;
+  // padding-left: 0px;
   width: auto;
 }
 
