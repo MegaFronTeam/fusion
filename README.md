@@ -1,4 +1,36 @@
-# Foundation for Emails Template
+# Foundation Emails Template
+
+## Описание
+Этот проект использует **Foundation for Emails** для создания адаптивных HTML-писем. Он позволяет быстро создавать и готовить HTML-код для рассылок, который корректно отображается в большинстве почтовых клиентов.
+
+В проекте:
+- **dist/fusion1.html** – первое письмо.
+- **dist/fusion2.html** – второе письмо.
+
+## Как сформировать готовый HTML-код для письма
+
+---
+
+### 1. Используйте Foundation Inliner
+1. Перейдите на сайт [Foundation Inliner](https://get.foundation/emails/inliner.html).
+2. Вставьте содержимое файлов в соответствующие поля:
+   - Скопируйте код из файла письма, например, `dist/fusion1.html` и вставьте в поле **HTML**.
+   - Скопируйте код из файла `dist/css/app.css` и вставьте в поле **CSS**.
+
+---
+
+### 2. Сформируйте итоговый код
+1. Нажмите кнопку **Inline**.
+2. После завершения процесса скопируйте код из поля **Final Email HTML**.
+
+---
+
+### 3. Используйте готовый код
+1. Вставьте финальный HTML-код в инструмент для рассылок, например:
+   - В SendPulse в разделе создания email-кампаний.
+   - В других почтовых системах, поддерживающих HTML-письма.
+
+---
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-emails-template/dev-status.svg)](https://david-dm.org/zurb/foundation-emails-template#info=devDependencies)
 
