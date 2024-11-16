@@ -2,14 +2,9 @@
 // Feel free to remove these styles for production!
 
 // Body Styles 
-body,
-html, 
-.body {
-  // background: $black !important;
-}
-
-.container.header {
-  background: #f3f3f3;
+table.body {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 table.container {
@@ -79,23 +74,17 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
-  border-radius: 12px;
   overflow: hidden;
 
   img {
     display: inline-block;
-    transform: translateY(4px);
+    vertical-align: middle;
     width: 24px !important;
   }
 }
 
 table.button.secondary table a {
   color: $primary-color !important;
-}
-
-
-.wrapper.secondary {
-  background: #f3f3f3;
 }
 
 .img-wrap {
@@ -109,14 +98,40 @@ table.button.secondary table a {
   }
 }
 
-.wrapper.card-item {
-  padding: 0;
+.wrapper.card-item.large-6.columns {
+  // padding: 0 !important;
+  padding-top: 0 !important;
   background: transparent;
+  @media only screen and (max-width: 591px) {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+
+  }
+
+}
+.row-col {
+  // border-collapse: separate;
+  // border-spacing: 24px 10px; 
+  // margin-left: -8px;
+  // margin-right: -8px;
+  width: calc(100% + 8px) !important;
+
+}
+@media only screen and (max-width: 591px) {
+  .row-col .wrapper.columns.card-item {
+      padding-left: 0px !important;
+      padding-right: 8px !important;
+  }
 }
 
+.row-col .wrapper.columns.card-item {
+  padding-left: 0px;
+  width: auto;
+}
+
+
 .card-item {
-  table {
-  }
   th {
     border-radius: 16px;
     background: $dark-gray;
@@ -147,18 +162,6 @@ table.button.secondary table a {
       height: 100% !important;
       object-position: bottom;
     }
-
-    // .before {
-    //   position: absolute;
-    //   top: 10%;
-    //   right: 0;
-    //   width: 50%;
-    //   height: 50px;
-    //   background: $primary-color;
-    //   z-index: 0;
-    //   border-radius: 100%;
-    //   filter: blur(40px);
-    // }
   }
 }
 
@@ -173,10 +176,26 @@ table.button.secondary table a {
   &__links {
     a {
       text-wrap: nowrap;
+      color: $primary-color !important;
     }
 
     a:not(:last-child) {
       margin-right: 24px;
+    }
+  }
+
+  &__brands {
+    a {
+      border: 1px white solid;
+      display: inline-block;
+      border-radius: 8px;
+      height: 27px;
+    }
+    img {
+      display: inline-block;
+      object-fit: contain;
+      width: 100% !important;
+      height: 100% !important;
     }
   }
 
@@ -207,16 +226,22 @@ table.button.secondary table a {
 .header {
   &__logo {
     max-width: max-content;
+    display: inline-block;
 
     img {
       display: inline-block;
       max-width: 178px;
+      margin-top: 4px;
     }
   }
 
   &__phone-wrapper {
     max-width: max-content;
     margin-left: auto;
+
+    .phone {
+      margin-top: 4px;
+    }
     .phone a {
       color: $white;
       font-weight: 700;
@@ -230,9 +255,13 @@ table.button.secondary table a {
       }
 
       img {
-        transform: translateY(4px);
+        margin-bottom: 3px;
         width: 24px !important;
       }
+    }
+
+    a.phone-link {
+      vertical-align: middle;
     }
   }
 }
