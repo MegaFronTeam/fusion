@@ -102,10 +102,10 @@ table.button.secondary table a {
   // padding: 0 !important;
   padding-top: 0 !important;
   background: transparent;
-  @media only screen and (max-width: 591px) {
+  // @media (max-width: 591px) {
     &:not(:first-child) {
-      margin-top: 8px;
-    }
+      margin-top: 8px !important;
+    // }
 
   }
 
@@ -183,14 +183,13 @@ table.button.secondary table a {
   }
 
   &__links {
+    text-align: center;
     a {
       text-wrap: nowrap;
       color: $primary-color !important;
+      margin: 0 12px;
     }
 
-    a:not(:last-child) {
-      margin-right: 24px;
-    }
   }
 
   &__brands {
@@ -199,7 +198,7 @@ table.button.secondary table a {
       display: inline-block;
       border-radius: 8px;
       height: 27px;
-      margin: 4px 0;
+      margin: 4px 2px;
     }
     img {
       display: inline-block;
