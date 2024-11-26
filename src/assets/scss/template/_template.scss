@@ -148,7 +148,7 @@ table.button.secondary table a {
   &__wrapper {
     padding: 24px;
     border-radius: 16px;
-    background: url(https://raw.githubusercontent.com/JulietBrn/fusion/refs/heads/main/src/assets/img/bg-blur.png) no-repeat;
+    background: url(https://raw.githubusercontent.com/MegaFronTeam/fusion/refs/heads/main/src/assets/img/bg-blur.png) no-repeat;
     background-position: top right;
     background-size: 240px 190px;
   }
@@ -199,8 +199,12 @@ table.button.secondary table a {
       border-radius: 8px;
       height: 27px;
       margin: 4px 2px;
+      @media (max-width: 591px) {
+        width: 95% !important;
+      }
     }
     img {
+      border-radius: inherit;
       display: inline-block;
       object-fit: contain;
       width: 100% !important;
@@ -209,12 +213,16 @@ table.button.secondary table a {
   }
 
   &__col-title {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
-  &__col-link a {
-    font-weight: 700;
-    color: $white;
+  &__col-link {
+    margin-bottom: 6px !important;
+
+    a {
+      font-weight: 700;
+      color: $white;
+    }
   }
 
   &__social-links  {
